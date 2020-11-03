@@ -19,8 +19,8 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	f "github.com/open-falcon/falcon-plus/modules/api/app/model/falcon_portal"
+	h "github.com/mohneesh-9797/falcon-plus/modules/api/app/helper"
+	f "github.com/mohneesh-9797/falcon-plus/modules/api/app/model/falcon_portal"
 	log "github.com/sirupsen/logrus"
 )
 

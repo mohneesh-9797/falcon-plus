@@ -43,9 +43,9 @@ print r.text
 ```bash
 # set $GOPATH and $GOROOT
 
-mkdir -p $GOPATH/src/github.com/open-falcon
-cd $GOPATH/src/github.com/open-falcon
-git clone https://github.com/open-falcon/transfer.git
+mkdir -p $GOPATH/src/github.com/mohneesh-9797
+cd $GOPATH/src/github.com/mohneesh-9797
+git clone https://github.com/mohneesh-9797/transfer.git
 
 cd transfer
 go get ./...

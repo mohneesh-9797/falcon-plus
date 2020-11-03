@@ -16,7 +16,7 @@ package http
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/modules/agent/funcs"
+	"github.com/mohneesh-9797/falcon-plus/modules/agent/funcs"
 	"github.com/toolkits/nux"
 	"net/http"
 	"runtime"

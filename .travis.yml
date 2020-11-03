@@ -2,6 +2,9 @@ sudo: required
 
 language: go
 
+arch:
+    - amd64
+    - arm64
 go:
   - "1.8"
 
@@ -20,5 +23,5 @@ script:
  
 
 after_success:
-  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/open-falcon/falcon-plus/modules/api/test
+  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/mohneesh-9797/falcon-plus/modules/api/test
   - bash <(curl -s https://codecov.io/bash)

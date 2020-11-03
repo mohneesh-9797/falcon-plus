@@ -1,4 +1,4 @@
-## Running open-falcon container
+## Running mohneesh-9797 container
 
 `the latest version in docker hub is v0.3`
 
@@ -14,7 +14,7 @@
 
     ## init mysql table before the first running
     cd /tmp && \
-    git clone --depth=1 https://github.com/open-falcon/falcon-plus && \
+    git clone --depth=1 https://github.com/mohneesh-9797/falcon-plus && \
     cd /tmp/falcon-plus/ && \
     for x in `ls ./scripts/mysql/db_schema/*.sql`; do
         echo init mysql table $x ...;
@@ -43,8 +43,8 @@ docker run --name falcon-redis -p6379:6379 -d redis:4-alpine3.8
          -p 8080:8080 \
          -e MYSQL_PORT=root:test123456@tcp\(db.falcon:3306\) \
          -e REDIS_PORT=redis.falcon:6379  \
-         -v /home/work/open-falcon/data:/open-falcon/data \
-         -v /home/work/open-falcon/logs:/open-falcon/logs \
+         -v /home/work/mohneesh-9797/data:/mohneesh-9797/data \
+         -v /home/work/mohneesh-9797/logs:/mohneesh-9797/logs \
          openfalcon/falcon-plus:v0.3
     
     ## start falcon backend modules, such as graph,api,etc.
@@ -55,10 +55,10 @@ docker run --name falcon-redis -p6379:6379 -d redis:4-alpine3.8
     docker exec falcon-plus sh ctrl.sh start/stop/restart xxx
 
     ## check status of backend modules
-    docker exec falcon-plus ./open-falcon check
+    docker exec falcon-plus ./mohneesh-9797 check
     
-    ## or you can check logs at /home/work/open-falcon/logs/ in your host
-    ls -l /home/work/open-falcon/logs/
+    ## or you can check logs at /home/work/mohneesh-9797/logs/ in your host
+    ls -l /home/work/mohneesh-9797/logs/
     
 ```
 
@@ -79,23 +79,23 @@ docker run --name falcon-redis -p6379:6379 -d redis:4-alpine3.8
         -e ALARM_DB_USER=root \
         -e ALARM_DB_PASS=test123456 \
         -e ALARM_DB_NAME=alarms \
-        -w /open-falcon/dashboard openfalcon/falcon-dashboard:v0.2.1  \
+        -w /mohneesh-9797/dashboard openfalcon/falcon-dashboard:v0.2.1  \
        './control startfg'
 ```
 ##### 5. Start falcon-agent in container
 ```
-    sudo docker run -d --restart always --name falcon-agent -e NUX_ROOTFS=/rootfs -v /:/rootfs:ro openfalcon/falcon-plus:v0.3 ./agent/bin/falcon-agent -c /open-falcon/agent/config/cfg.json
+    sudo docker run -d --restart always --name falcon-agent -e NUX_ROOTFS=/rootfs -v /:/rootfs:ro openfalcon/falcon-plus:v0.3 ./agent/bin/falcon-agent -c /mohneesh-9797/agent/config/cfg.json
 ```
 
 ----
 
-## Building open-falcon images from source code
+## Building mohneesh-9797 images from source code
 
 ##### Building falcon-plus
 
 ```
     cd /tmp && \
-    git clone https://github.com/open-falcon/falcon-plus && \
+    git clone https://github.com/mohneesh-9797/falcon-plus && \
     cd /tmp/falcon-plus/ && \
     docker build -t falcon-plus:v0.3 .
 ```
@@ -103,7 +103,7 @@ docker run --name falcon-redis -p6379:6379 -d redis:4-alpine3.8
 ##### Building falcon-dashboard
 ```
     cd /tmp && \
-    git clone https://github.com/open-falcon/dashboard  && \
+    git clone https://github.com/mohneesh-9797/dashboard  && \
     cd /tmp/dashboard/ && \
     docker build -t falcon-dashboard:v0.2.1 .
 ```

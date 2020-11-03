@@ -23,9 +23,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	"github.com/open-falcon/falcon-plus/modules/api/app/model/uic"
-	"github.com/open-falcon/falcon-plus/modules/api/app/utils"
+	h "github.com/mohneesh-9797/falcon-plus/modules/api/app/helper"
+	"github.com/mohneesh-9797/falcon-plus/modules/api/app/model/uic"
+	"github.com/mohneesh-9797/falcon-plus/modules/api/app/utils"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )

@@ -18,8 +18,8 @@ import (
 	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	alm "github.com/open-falcon/falcon-plus/modules/api/app/model/alarm"
+	h "github.com/mohneesh-9797/falcon-plus/modules/api/app/helper"
+	alm "github.com/mohneesh-9797/falcon-plus/modules/api/app/model/alarm"
 	"strings"
 )
 

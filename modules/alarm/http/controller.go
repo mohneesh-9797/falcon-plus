@@ -16,7 +16,7 @@ package http
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/g"
 	"github.com/toolkits/file"
 )
 

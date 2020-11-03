@@ -15,8 +15,8 @@
 package cron
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
-	eventmodel "github.com/open-falcon/falcon-plus/modules/alarm/model/event"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/g"
+	eventmodel "github.com/mohneesh-9797/falcon-plus/modules/alarm/model/event"
 	"time"
 )
 

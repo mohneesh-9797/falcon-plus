@@ -22,10 +22,10 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/falcon-plus/modules/alarm/cron"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
-	"github.com/open-falcon/falcon-plus/modules/alarm/http"
-	"github.com/open-falcon/falcon-plus/modules/alarm/model"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/cron"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/http"
+	"github.com/mohneesh-9797/falcon-plus/modules/alarm/model"
 )
 
 func main() {

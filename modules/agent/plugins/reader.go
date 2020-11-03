@@ -15,7 +15,7 @@
 package plugins
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/agent/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/agent/g"
 	"io/ioutil"
 	"log"
 	"path/filepath"

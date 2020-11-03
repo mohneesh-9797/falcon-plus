@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
-	"github.com/open-falcon/falcon-plus/modules/transfer/proc"
-	"github.com/open-falcon/falcon-plus/modules/transfer/sender"
+	cmodel "github.com/mohneesh-9797/falcon-plus/common/model"
+	"github.com/mohneesh-9797/falcon-plus/modules/transfer/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/transfer/proc"
+	"github.com/mohneesh-9797/falcon-plus/modules/transfer/sender"
 )
 
 func socketTelnetHandle(conn net.Conn) {

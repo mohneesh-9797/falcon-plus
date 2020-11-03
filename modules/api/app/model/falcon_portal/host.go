@@ -18,7 +18,7 @@ import (
 	"errors"
 	"fmt"
 
-	con "github.com/open-falcon/falcon-plus/modules/api/config"
+	con "github.com/mohneesh-9797/falcon-plus/modules/api/config"
 )
 
 // +----------------+------------------+------+-----+-------------------+-----------------------------+

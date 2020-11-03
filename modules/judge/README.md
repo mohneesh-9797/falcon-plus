@@ -24,9 +24,9 @@ each(metric=qps project=falcon)
 
 ```bash
 # set $GOPATH and $GOROOT
-mkdir -p $GOPATH/src/github.com/open-falcon
-cd $GOPATH/src/github.com/open-falcon
-git clone https://github.com/open-falcon/judge.git
+mkdir -p $GOPATH/src/github.com/mohneesh-9797
+cd $GOPATH/src/github.com/mohneesh-9797
+git clone https://github.com/mohneesh-9797/judge.git
 cd judge
 go get ./...
 ./control build

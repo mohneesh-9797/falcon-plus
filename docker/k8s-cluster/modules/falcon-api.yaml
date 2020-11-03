@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: open-falcon
+  namespace: mohneesh-9797
   name: falcon-api
   labels:
-    app: open-falcon
+    app: mohneesh-9797
 spec:
   type: ClusterIP
   ports:
@@ -16,10 +16,10 @@ spec:
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  namespace: open-falcon
+  namespace: mohneesh-9797
   name: falcon-api
   labels:
-    app: open-falcon
+    app: mohneesh-9797
 spec:
   replicas: 1
   template:
@@ -29,14 +29,14 @@ spec:
     spec:
       containers:
         - name: falcon-api
-          image: registry.cn-hangzhou.aliyuncs.com/open-falcon/api:v0.3
+          image: registry.cn-hangzhou.aliyuncs.com/mohneesh-9797/api:v0.3
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               name: http
               protocol: TCP
           volumeMounts:
-            - mountPath: /open-falcon/api/config
+            - mountPath: /mohneesh-9797/api/config
               name: falcon-api-config
             - mountPath: /etc/localtime
               name: tz-config
@@ -44,7 +44,7 @@ spec:
         - flexVolume:
             driver: alicloud/nas
             options:
-              path: /open-falcon/falcon-api/config
+              path: /mohneesh-9797/falcon-api/config
               server: xxx.cn-hangzhou.nas.aliyuncs.com
               vers: "4.0"
           name: falcon-api-config

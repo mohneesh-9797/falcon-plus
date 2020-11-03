@@ -19,7 +19,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/open-falcon/falcon-plus/modules/aggregator/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/aggregator/g"
 )
 
 type Worker struct {

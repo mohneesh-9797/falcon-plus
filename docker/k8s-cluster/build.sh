@@ -11,7 +11,7 @@ MODULES=(
     'nodata'
     'transfer'
 )
-DOCKER_REGISTRY=registry.cn-hangzhou.aliyuncs.com/open-falcon
+DOCKER_REGISTRY=registry.cn-hangzhou.aliyuncs.com/mohneesh-9797
 VERSION=v0.3
 
 clean() {
@@ -26,8 +26,8 @@ build() {
     echo "build source..."
     docker run -it --rm \
         --name build \
-        -v "$(pwd)":"/go/src/github.com/open-falcon/falcon-plus" \
-        -w "/go/src/github.com/open-falcon/falcon-plus" \
+        -v "$(pwd)":"/go/src/github.com/mohneesh-9797/falcon-plus" \
+        -w "/go/src/github.com/mohneesh-9797/falcon-plus" \
         openfalcon/makegcc-golang:1.10-alpine \
         docker/k8s-cluster/init.sh
 }

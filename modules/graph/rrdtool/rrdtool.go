@@ -21,12 +21,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
+	cmodel "github.com/mohneesh-9797/falcon-plus/common/model"
 	"github.com/open-falcon/rrdlite"
 	"github.com/toolkits/file"
 
-	"github.com/open-falcon/falcon-plus/modules/graph/g"
-	"github.com/open-falcon/falcon-plus/modules/graph/store"
+	"github.com/mohneesh-9797/falcon-plus/modules/graph/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/graph/store"
 )
 
 var (

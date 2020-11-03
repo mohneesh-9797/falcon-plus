@@ -15,7 +15,7 @@
 package rpc
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/judge/g"
+	"github.com/mohneesh-9797/falcon-plus/modules/judge/g"
 	"log"
 	"net"
 	"net/rpc"
